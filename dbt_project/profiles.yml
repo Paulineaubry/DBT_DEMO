@@ -1,0 +1,21 @@
+dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      server: localhost
+      port: 3306
+      database: my_dbt_db
+      schema: my_dbt_db
+      username: root 
+      password: Didouwild
+      driver: MySQL ODBC 8.0 ANSI Driver
+    prod:
+      type: mysql
+      server: [server/host]
+      port: [port]  
+      database: [schema] 
+      schema: [schema]
+      username: [username]
+      password: [password]
+      driver: MySQL ODBC 8.0 ANSI Driver
